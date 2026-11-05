@@ -17,13 +17,8 @@ C++ 入门练习合集（4 个独立小程序），覆盖**结构体、C 风格�
 g++ -std=c++11 -O2 Untitled-1.cpp -o u1 && ./u1
 ```
 
-> ⚠️ **注意：源文件的缩进是 U+00A0（不间断空格）**
-> 在 VSCode 里看起来和普通空格一样，但 `g++` 会报 `error: stray '\302' in program`。
-> 编译前先把它转成普通空格（不改变代码语义）：
->
-> ```bash
-> sed -i 's/\xc2\xa0/ /g' Untitled-*.cpp
-> ```
+> 备注：这几个文件最初的缩进是不间断空格（U+00A0，在 VSCode 里看着和普通空格一样，但 `g++` 会报
+> `error: stray '\302' in program`），已在提交 “Normalize indentation” 中统一改成普通空格，代码逻辑未改动。
 
 ## 运行示例
 
