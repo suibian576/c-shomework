@@ -1,0 +1,10 @@
+# 编译产物
+*.exe
+*.o
+*.obj
+*.out
+a.out
+
+# 构建目录
+.build/
+build/
